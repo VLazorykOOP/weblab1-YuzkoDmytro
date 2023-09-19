@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моя веб-сторінка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center; /* Добавлено для выравнивания заголовка по центру */
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 24px; /* Размер изменен с 24px на 24px (была дублированная строка) */
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        h6 {
+            font-size: 16px;
+            font-style: italic; /* Стиль изменен на "italic" */
+            text-align: right;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px; /* Заменено "size" на "height" */
+            margin: 0 auto; /* Добавлено для выравнивания по центру */
+        }
+
+        u {
+            lang: en;
+            id: underlined-text;
+            class: special-text;
+        }
+
+        small {
+            dir: ltr;
+            class: note-text;
+            font-size: 12px; /* Стиль изменен на правильный формат */
+        }
+
+        i {
+            class: italic-text;
+            lang: en;
+            dir: ltr;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Каталог меблів</h1>
+    </header>
+    <div class="menu"> <!-- Исправлены ошибки в разметке div и ul -->
+        <ul>
+            <li><a href="index_1.html">Про автора</a></li>
+            <li><a href="index_2.html">Каталог</a></li>
+            <li><a href="index_3.html">Новини</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <section>
+            <h2 align="center">Диван</h2> <!-- Исправлена ошибка в атрибуте "aling" на "align" -->
+            <h3 title="Заголовок рівня 3">Марка: ЛюксМебель</h3>
+            <h3 title="Заголовок рівня 3">Виробник: ФурнітурПродакшн</h3>
+            <h3 title="Заголовок рівня 3">Постачальник: МебліСток</h3>
+            <h3 title="Заголовок рівня 3">Ціна: $1000</h3>
+
+            <hr class="line"> <!-- Исправлено на "class" и добавлено закрытие тега -->
+            
+            <h4 align="center" title="Заголовок рівня 4">Кухонний стіл</h4>
+            <h5 title="Заголовок рівня 5">Марка: ЕлегантСтайл</h5>
+            <h5 title="Заголовок рівня 5">Виробник: ДізайнМеблі</h5>
+            <h5 title="Заголовок рівня 5">Постачальник: ІнтеріорТренд</h5>
+            <h5 title="Заголовок рівня 5">Ціна: $800</h5>
+
+            <hr class="line">
+
+            <h4 align="center" title="Заголовок рівня 4">Декоративне крісло</h4>
+            <h5 title="Заголовок рівня 5">Марка: ЕлегантБосс</h5> <!-- Исправлено на "ЕлегантБосс" -->
+            <h5 title="Заголовок рівня 5">Виробник: ДізайнМеблі</h5>
+            <h5 title="Заголовок рівня 5">Постачальник: Амазон</h5>
+            <h5 title="Заголовок рівня 5">Ціна: $150</h5>
+
+            <h6 style="font-style: italic;" title="Заголовок рівня 6" align="right"><small>Ваш улюблений "МебліНаШару"</small></h6>
+        </section>
+    </div>
+</body>
+</html>
