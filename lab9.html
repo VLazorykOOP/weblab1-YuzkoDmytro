@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab9.css">
+    <title>Медіа-бібліотека</title>
+</head>
+<body>
+    <header>
+        <h1>Моя медіа-бібліотека</h1>
+    </header>
+    <main>
+        <section class="audio-library">
+            <h2>Аудіо</h2>
+            <audio controls>
+                <source src="son.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <section class="video-library">
+            <h2>Відео</h2>
+            <div>
+                <button onclick="changeVideo('123.mp4')">Відео 1</button>
+                <button onclick="changeVideo('2.mp4')">Відео 2</button>
+            </div>
+            <video id="selectedVideo" controls>
+                <source id="videoSource" src="123.mp4" type="video/mp4">.
+                <source id="videoSource2" src="2.mp4" type="video/mp4">.
+            </video>
+        </section>
+
+        <section class="external-video">
+            <h2>Зовнішнє відео</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AfC4v2EMHoE?si=jZKg01J_-SfBrYHn" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <script>
+        function changeVideo(videoFileName) {
+            var selectedVideo = document.getElementById("selectedVideo");
+            var videoSource = document.getElementById("videoSource");
+
+            videoSource.src = "video/" + videoFileName;
+            selectedVideo.load();
+        }
+    </script>
+</body>
+</html>
